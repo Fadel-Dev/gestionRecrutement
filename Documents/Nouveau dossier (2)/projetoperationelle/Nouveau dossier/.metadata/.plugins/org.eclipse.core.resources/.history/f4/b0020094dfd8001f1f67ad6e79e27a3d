@@ -1,0 +1,39 @@
+package com.example.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.demo.modele.Role;
+import com.example.demo.modele.User;
+import com.example.demo.repository.RoleRepository;
+import com.example.demo.repository.UserRepository;
+
+public class Userimplservice implements userService {
+    @Autowired
+	UserRepository userrepository;
+    @Autowired
+    RoleRepository rolerepository;
+	@Override
+	public User saveUser(User user) {
+		// TODO Auto-generated method stub
+		return userrepository.save(user)
+	}
+
+	@Override
+	public User findUserByUsername(String username) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Role addRole(Role role) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User addRoleToUser(String username, String rolename) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

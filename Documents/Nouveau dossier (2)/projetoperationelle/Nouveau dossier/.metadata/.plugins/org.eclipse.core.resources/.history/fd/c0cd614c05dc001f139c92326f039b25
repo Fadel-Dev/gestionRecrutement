@@ -1,0 +1,14 @@
+package com.example.demo.restcontrolers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.service.userService;
+
+@CrossOrigin(origins = "*")
+@RestController
+public class UserRESTController {
+    @Autowired
+	userService userservice;
+}

@@ -1,0 +1,41 @@
+package com.example.demo;
+
+//import org.springframework.beans.factory.annotation.Autowired;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+/*import com.example.demo.modele.Role;
+import com.example.demo.modele.User;
+import com.example.demo.service.userService;
+
+import jakarta.annotation.PostConstruct;*/
+
+@SpringBootApplication
+public class UserTokenApplication {
+	/*@Autowired
+	userService userservice;*/
+	public static void main(String[] args) {
+		SpringApplication.run(UserTokenApplication.class, args);
+		
+	}
+    
+	/* @PostConstruct
+	void init_users() {
+	//ajouter les rôles
+	userservice.addRole(new Role(null,"ADMIN"));
+	userservice.addRole(new Role(null,"USER"));
+	//ajouter les users
+	userservice.saveUser(new User(null,"admin","123",true,null));
+	userservice.saveUser(new User(null,"nadhem","123",true,null));
+	userservice.saveUser(new User(null,"yassine","123",true,null));
+	//ajouter les rôles aux users
+	userservice.addRoleToUser("admin", "ADMIN");
+	userservice.addRoleToUser("admin", "USER");
+	userservice.addRoleToUser("nadhem", "USER");
+	userservice.addRoleToUser("yassine", "USER");
+	}*/
+	
+}

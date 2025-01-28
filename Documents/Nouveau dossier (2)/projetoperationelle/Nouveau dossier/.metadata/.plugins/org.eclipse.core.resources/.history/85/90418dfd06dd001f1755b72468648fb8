@@ -1,0 +1,10 @@
+package com.example.demo.service.exceptions;
+
+public class EmailAlreadyExistsException extends RuntimeException {
+  private String message;
+
+public EmailAlreadyExistsException(String message) {
+	super(message);
+}
+  
+}
